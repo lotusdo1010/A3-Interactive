@@ -12,167 +12,6 @@ body {
     background: #f0f0f0;
 }
 
-/* ===================== Thumbnail ===================== */
-
-.Art6--lower-right {
-    position: absolute;
-    top: 599px;
-    left: 803px;
-    width: 683px;
-    height: 425px;
-}
-
-.Art6--upper-left {
-    position: absolute;
-    top: 435px;
-    left: 630px;
-    width: 681px;
-    height: 424px;
-    transform: rotate(-180deg);
-    transform-origin: top left;
-}
-
-.Rectangle1 {
-    position: absolute;
-    top: 30px;
-    left: 31px;
-    width: 1379px;
-    height: 964px;
-    border: 15px solid #BF643D;
-    border-radius: 20px;
-}
-
-.Art22 {
-    position: absolute;
-    top: 32px;
-    left: 25px;
-    width: 269px;
-    height: 327px;
-}
-
-.Art16 {
-    position: absolute;
-    top: 0;
-    left: 339.31px;
-    width: 251.8px;
-    height: 142.63px;
-    transform: rotate(35deg);
-    transform-origin: top left;
-}
-
-.Art5 {
-    position: absolute;
-    top: 450px;
-    left: 1029px;
-    width: 443px;
-    height: 610px;
-}
-
-.Art24 {
-    position: absolute;
-    top: 48px;
-    left: 552px;
-    width: 395px;
-    height: 128px;
-}
-
-.Art23 {
-    position: absolute;
-    top: 47px;
-    left: 1047px;
-    width: 353px;
-    height: 247px;
-}
-
-.Art19 {
-    position: absolute;
-    top: 641px;
-    left: 287px;
-    width: 263px;
-    height: 355px;
-}
-
-.Art18 {
-    position: absolute;
-    top: 350.51px;
-    left: 83.12px;
-    width: 284.24px;
-    height: 594.59px;
-    transform: rotate(8deg);
-    transform-origin: top left;
-}
-
-.Art17 {
-    position: absolute;
-    top: 800px;
-    left: 826px;
-    width: 194px;
-    height: 159px;
-}
-
-.Art15 {
-    position: absolute;
-    top: 341px;
-    left: 1227px;
-    width: 119px;
-    height: 149px;
-}
-
-.Art4 {
-    position: absolute;
-    top: 654px;
-    left: 512px;
-    width: 223px;
-    height: 221px;
-}
-
-.Art26 {
-    position: absolute;
-    top: 517px;
-    left: 45px;
-    width: 425px;
-    height: 518px;
-}
-
-.Art28 {
-    position: absolute;
-    top: 770px;
-    left: 521px;
-    width: 303px;
-    height: 206px;
-}
-
-.TheEntangledBody,
-.GetStart {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    font-family: "Kablammo", cursive;
-    font-size: 90px;
-    font-weight: 400;
-    overflow-wrap: break-word;
-}
-
-.TheEntangledBody {
-    top: 266px;
-    left: 189px;
-    width: 1063px;
-    height: 142px;
-    color: white;
-}
-
-.GetStart {
-    top: 500px;
-    left: 596px;
-    width: 520px;
-    height: 139px;
-    color: #BF643D;
-    cursor: pointer;
-    user-select: none;
-}
-
 /* ===================== Thumbnail 2 ===================== */
 
 .Thumbnail-2 {}
@@ -301,7 +140,7 @@ body {
     transform-origin: center;
 }
 
-/* ===================== PageContent (nền chung, z-index thấp) ===================== */
+/* ===================== PageContent (nền chung ) ===================== */
 
 .PageContent {
     position: relative;
@@ -388,7 +227,7 @@ body {
     position: absolute;
 }
 
-/* ===================== Content1 (đè lên PageContent) ===================== */
+/* ===================== Content1  ===================== */
 
 .Content1 {
     position: relative;
@@ -467,7 +306,7 @@ body {
     transition: opacity 0.4s ease;
 }
 
-/* ===================== Content2 (đè lên PageContent) ===================== */
+/* ===================== Content2 ===================== */
 
 .Content2 {
     position: relative;
@@ -1301,7 +1140,7 @@ body {
     filter: drop-shadow(0 0 25px rgba(220, 38, 38, 0.95)) drop-shadow(0 0 45px rgba(153, 27, 27, 0.8)) !important;
 }
 
-/* Flash màn hình đỏ độc hại khi thả thành công */
+/* Flash màn hình đỏ độc hại khi thả */
 .toxic-overlay-flash {
     position: fixed;
     top: 0;
@@ -1365,7 +1204,7 @@ body {
     }
 }
 
-/* Vòng sóng độc hại loang ra tại điểm thả */
+/* Vòng loang ra tại điểm thả */
 .toxic-ripple {
     position: fixed;
     border-radius: 50%;
@@ -1398,7 +1237,7 @@ body {
     }
 }
 
-/* Hiệu ứng bừng sáng độc hại trên phần tử cơ quan bị phá hủy mới xuất hiện */
+/* Hiệu ứng sáng trêncơ quan bị phá hủy */
 .toxic-reveal-glow {
     animation: toxicRevealPulse 1.3s ease-out forwards;
 }
@@ -1729,12 +1568,7 @@ body {
     color: #8C4020;
 }
 
-/* ==========================================================================
-   ANIMATION NỘI TẠNG NẰM GIỮA (FLOATING ORGAN ANIMATIONS)
-   - Từng cơ quan chuyển động lên xuống riêng lẻ với chu kỳ và nhịp độ tự nhiên khác nhau
-   - Các tổn thương, khối u đi liền với cơ quan nào sẽ chuyển động đồng bộ với cơ quan đó
-   - Loại trừ hoàn toàn Ảnh 11, 13 và 34, 35 cùng tất cả ảnh đè lên (giữ cố định tuyệt đối)
-   ========================================================================== */
+/* ===== ANIMATION NỘI TẠNG ======= */
 
 /* 1. Nhóm Tim (Heart Group: #Tim, #Timbenh, #TimChT) - Nhịp đập bồng bềnh 2.5s */
 @keyframes floatHeart {
@@ -1808,7 +1642,7 @@ body {
     animation-delay: -0.6s;
 }
 
-/* 4. Nhóm Dạ dày & Tĩnh mạch thực quản (Stomach Group) - Nhịp 2.9s */
+/* 4. Nhóm Dạ dày & Tĩnh mạch thực quản */
 @keyframes floatStomachRotated {
     0% {
         transform: translateY(0px) rotate(-3deg);
@@ -1885,11 +1719,7 @@ body {
     animation-delay: -2.7s;
 }
 
-/* ==========================================================================
-   CÁC ẢNH CỐ ĐỊNH HOÀN TOÀN (KHÔNG CHUYỂN ĐỘNG THEO YÊU CẦU)
-   - Ảnh 11 (#MUXanh) và Ảnh 13 (#MU) cùng tất cả tổn thương đè lên mạch máu trên
-   - Ảnh 34 (#MUDI) và Ảnh 35 (#MUXanhDI) cùng tất cả tổn thương đè lên mạch máu dưới
-   ========================================================================== */
+/* ======= CÁC ẢNH CỐ ĐỊNH HOÀN TOÀN ========= */
 #MUXanh,
 #MU,
 #Artboard901,

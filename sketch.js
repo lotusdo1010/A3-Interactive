@@ -2178,15 +2178,15 @@ window.addEventListener('load', function () {
                                     setTimeout(function () {
                                         target103.style.display = 'none';
                                         if (target104) target104.style.display = 'none';
-                                    }, 500);
 
-                                    var target102 = document.getElementById('Than');
-                                    if (target102) {
-                                        target102.style.display = 'block';
-                                        target102.style.opacity = '0';
-                                        target102.style.transition = 'opacity 0.5s ease';
-                                        setTimeout(function () { target102.style.opacity = '1'; }, 10);
-                                    }
+                                        var target102 = document.querySelector('.U2#Than');
+                                        if (target102) {
+                                            target102.style.display = 'block';
+                                            target102.style.opacity = '0';
+                                            target102.style.transition = 'opacity 0.5s ease';
+                                            setTimeout(function () { target102.style.opacity = '1'; }, 10);
+                                        }
+                                    }, 500);
                                     currentToolIndexU2 = 1; window.currentToolIndexU2 = 1; if (typeof window.updateU2FixText === 'function') window.updateU2FixText();
                                     var ruoubia = document.getElementById('RuouBia');
                                     if (ruoubia) {
